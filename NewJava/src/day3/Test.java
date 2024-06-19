@@ -20,7 +20,7 @@ public class Test {
 				question=sc.nextInt();
 				
 				for(int i=1; i<=question; i++) {
-					int x=r.nextInt(9)+1;
+					int x=r.nextInt(8)+2;
 					int y=r.nextInt(9)+1;
 				
 					System.out.print(x+"*"+y+"=");
