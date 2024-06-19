@@ -15,7 +15,8 @@ public class While_4 {
 		while(true) {
 			System.out.print("구구단 시작(1), 채점(2), 종료(0) : ");
 			int num=sc.nextInt();
-			if(num==1) {
+			
+			 if(num==1) {
 				System.out.print("문제 갯수? : ");
 				int question=sc.nextInt();
 				for(int i=1; i<=question; i++) {
@@ -38,6 +39,8 @@ public class While_4 {
 			}else if(num==0){
 				System.out.println("종료");
 				break;
+			}else {
+				System.out.println("잘못된 선택입니다. 다시 고르세요");
 			}
 		}
 	}
