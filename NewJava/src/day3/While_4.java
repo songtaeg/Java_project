@@ -10,6 +10,7 @@ public class While_4 {
 		Scanner sc=new Scanner(System.in);
 		int count=0; //문제 
 		int correct=0; //정답
+		//수정 주석
 		
 		while(true) {
 			System.out.print("구구단 시작(1), 채점(2), 종료(0) : ");
