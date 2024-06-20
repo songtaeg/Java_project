@@ -23,16 +23,21 @@ public class While_4 {
 					count++;
 					int x=r.nextInt(9)+1;
 					int y=r.nextInt(9)+1;
-					System.out.print(x+"*"+y+"=");
-					
-					int answer=sc.nextInt();
-					if(x*y==answer) {
-						System.out.println("정답!");
-						correct++;
+					int menu=1;
+					while(menu==1) {
+						System.out.print(x+"*"+y+"=");
+						int answer=sc.nextInt();
+						if(x*y==answer) {
+							System.out.println("정답!");
+							menu=0;
+							correct++;
 					}else {
 						System.out.println("오답");
+						System.out.println("다시 풀기(1), 다음 문제(그 외 숫자): ");
+						menu=sc.nextInt();
 					}
 				}
+			}
 				
 			}else if(num==2){
 				System.out.println("현재까지 "+count+"문제 중 "+correct+"문제 맞추셨습니다.");
