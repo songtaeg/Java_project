@@ -68,6 +68,7 @@ public class Test_1 {
 		while(i<=9) {
 			int j=1; //j 초기화
 			if(i==4 || i==8) {
+				System.out.println("skip");
 				i++;
 			}
 			while(j<=9) {
