@@ -1,6 +1,6 @@
 package day4;
 
-public class array_10 {
+public class Array_10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
