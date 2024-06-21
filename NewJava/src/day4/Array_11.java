@@ -12,7 +12,7 @@ public class Array_11 {
 		int cnt=0;
 		//향상된 for문
 		for(int num:arr) {
-			if(num>0) {
+			if(num>0) { //양수의 평균
 				sum+=num;
 				cnt++;
 			}
