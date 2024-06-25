@@ -9,6 +9,7 @@ public class IPTV extends ColorTV{
 	}
 	
 	void printProperty() {
-		System.out.println("나의 tv는 "+ip+" 주소의 "+getSize()+"인치 "+color+"컬러");
+		System.out.print("나의 tv는 "+ip+" 주소의 ");
+		super.printProperty();
 	}
 }
