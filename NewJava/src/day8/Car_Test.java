@@ -49,8 +49,9 @@ public class Car_Test {
 	}
 	
 	public static void main(String[] args) {
-		Car_Test car1=new Car_Test();
+		Car_Test car1=new Car_Test(); //기본차
 		car1.carInfo();
+		
 		car1.setInfo("아반떼", "노란색", 0);
 		car1.carInfo();
 		
