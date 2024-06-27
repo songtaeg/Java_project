@@ -6,6 +6,7 @@ public class Car_Test {
 	int speed;
 	
 	Car_Test(){
+		//this("기본차","하얀색",0);
 		this.name="기본차";
 		this.color="하얀색";
 	}
@@ -27,6 +28,8 @@ public class Car_Test {
 	}
 	
 	void speedUp(int i) {
+		//this.speed=this.speed+speed;
+		//this.speed+=speed;
 		speed+=i;
 		if(speed>=200) {
 			System.out.println("200 이상 속도 불가. 200으로 변경");
