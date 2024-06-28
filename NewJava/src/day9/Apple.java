@@ -6,4 +6,5 @@ public class Apple extends Fruit{
 		super(name, color, price);
 		// TODO Auto-generated constructor stub
 	}
+
 }
