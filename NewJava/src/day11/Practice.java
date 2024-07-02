@@ -1,25 +1,36 @@
 package day11;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class Practice {
 
-	public static void main(String[] args) {
-		HashMap<String,Object> score =new HashMap<String, Object>();		
+	public static void main(String[] args) {	
 		System.out.println("장학금관리시스템");
+		ArrayList<HashMap<String,Object>>list=new ArrayList<HashMap<String,Object>>();
+		
 		Scanner sc=new Scanner(System.in);
-		for(int i=0; i<=4; i++) {
+		for(int i=0; i<5; i++) {
+			HashMap<String,Object> scoreMap =new HashMap<String, Object>();	
 			System.out.print("이름과 학점>>");
-			score.put("name", sc.next());
-			String s=sc.next();
-			StringTokenizer st=new StringTokenizer(s," ");
-			String score2=st.nextToken();
-			double s1=Double.parseDouble(score2);
+			String name=sc.next();
+			double score=sc.nextDouble();
+			//scoreMap.put(name, d);
+			scoreMap.put("name", name);
+			scoreMap.put("score", score);
+			list.add(scoreMap);
 		}
+		
 		System.out.print("장학생 선발 학점 기준>>");
-		String st=sc.next();
+		double standdard=sc.nextDouble();
+		System.out.println("장학생 명단: ");
+		for(int i=0; i<list.size(); i++) {
+			HashMap<String,Object> user =list.get(i);
+			double score=(double) user.get("score");
+			if(score>=standdard) {
+				System.out.print(user.get("name")+" ");
+			}
+		}
 	}
-
 }
