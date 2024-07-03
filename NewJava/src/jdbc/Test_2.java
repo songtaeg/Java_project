@@ -25,7 +25,7 @@ public class Test_2 {
 			boolean flag=false;
 			
 			for(int i=0; i<arr.length; i++) {
-				if(i!=4 && arr[i]==n1) {
+				if( arr[i]==n1) {
 					System.out.println("다시 입력");
 					flag=true;
 					break;
