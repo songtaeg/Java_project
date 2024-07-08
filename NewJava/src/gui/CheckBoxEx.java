@@ -20,11 +20,12 @@ public class CheckBoxEx extends JFrame{
 		c.setLayout(new FlowLayout());
 		c.add(new JLabel("사과 3000원, 바나나 5000원, 포도 4500원"));
 		
+		Myitem item =new Myitem();
 		for(int i=0; i<check.length; i++) {
 			check[i]=new JCheckBox(name[i]);
 			check[i].setBorderPainted(true);
 			c.add(check[i]);
-			check[i].addItemListener(new Myitem());
+			check[i].addItemListener(item);
 		}
 		
 		la=new JLabel("현재 0원");
