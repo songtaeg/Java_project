@@ -46,7 +46,7 @@ public class Array_2 {
 //			}
 //		}	
 //		for(int i=0; i<intArray.length; i++) {
-//			for(int j=0; j<arr[i].length; j++) {
+//			for(int j=0; j<intArray[i].length; j++) {
 //					System.out.print(arr[i][j]+"\t");
 //			}
 //				System.out.println();
