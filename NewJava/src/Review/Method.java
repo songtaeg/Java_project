@@ -16,6 +16,10 @@ public class Method {
 		int arr[]= {1,3,4,2,5};
 		int arrSum=c.arraySum(arr);
 		System.out.println(arrSum);
+		
+		int arr2[]= {3,5,6,2,2};
+		int arrSum2=c.arraySum(arr2);
+		System.out.println(arrSum2);
 
 	}
 
